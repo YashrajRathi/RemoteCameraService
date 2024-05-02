@@ -45,7 +45,12 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
         modifier = modifier
     ) {
         // Conditional text based on whether the button has been clicked
-        Text(if (isClicked) "Hello, $name!" else "Click me!")
+        Text(if (isClicked) {
+            "Hello, $name!"
+        } else {
+            "Click me!"
+        }
+        )
     }
 }
 
